@@ -30,7 +30,7 @@ module "virtual_network" {
 
 
 
-module "backendsubnet" {
+module "frontendsubnet" {
   depends_on = [module.virtual_network]
   source = "../module/azurerm_subnet"
 
