@@ -18,15 +18,15 @@ module "virtual_network" {
   resource_group_name          = "todoappresourcegroup" # ye correct hona chahiye, not azurerm_resource_group_name
   resource_group_location      = "canada central"# ye correct hona chahiye, not azurerm_resource_group_location
 }
-# module "frontendsubnet" {
-#   depends_on = [module.virtual_network]
-#   source = "../module/azurerm_subnet"
+module "frontendsubnet" {
+  depends_on = [module.virtual_network]
+  source = "../module/azurerm_subnet"
 
-#   subnet_name            = "FrontendSubnet"
-#   virtual_network_name   = "TodoAppVNet"       # ye correct hona chahiye, not azurerm_virtual_network_name
-#   resource_group_name    = "TodoAppResourceGroup" # ye correct hona chahiye, not azurerm_resource_group_name
-# subnet_address_prefixes = ["10.0.1.0/24"]
-# }
+  subnet_name            = "FrontendSubnet"
+  virtual_network_name   = "TodoAppVNet"       # ye correct hona chahiye, not azurerm_virtual_network_name
+  resource_group_name    = "TodoAppResourceGroup" # ye correct hona chahiye, not azurerm_resource_group_name
+subnet_address_prefixes = ["10.0.1.0/24"]
+}
 
 
 
