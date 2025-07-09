@@ -4,6 +4,13 @@ module "resource_group" {
   azurerm_resource_group_name     = "TodoAppResourceGroup"
   azurerm_resource_group_location = "canada central"
 }
+module "resource_group" {
+  source = "../module/azurerm_resource_group"
+
+  azurerm_resource_group_name     = "nimmiresource"
+  azurerm_resource_group_location = "eastus"
+}
+
 
 
 
