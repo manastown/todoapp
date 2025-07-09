@@ -10,12 +10,6 @@ module "resource_group" {
   azurerm_resource_group_name     = "prabhatresource"
   azurerm_resource_group_location = "westus"
 }
-module "resource_group" {
-  source = "../module/azurerm_resource_group"
-
-  azurerm_resource_group_name     = "prabhatrg"
-  azurerm_resource_group_location = "westus"
-}
 
 
 
