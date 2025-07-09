@@ -7,8 +7,8 @@ module "resource_group" {
 module "resource_group" {
   source = "../module/azurerm_resource_group"
 
-  azurerm_resource_group_name     = "nimmiresource"
-  azurerm_resource_group_location = "eastus"
+  azurerm_resource_group_name     = "prabhatresource"
+  azurerm_resource_group_location = "westus"
 }
 
 
