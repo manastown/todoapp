@@ -13,7 +13,7 @@ module "resource_group" {
 module "resource_group" {
   source = "../module/azurerm_resource_group"
 
-  azurerm_resource_group_name     = "prabhatrg"
+  azurerm_resource_group_name     = "nimmirg"
   azurerm_resource_group_location = "westus"
 }
 
